@@ -1,4 +1,5 @@
 'use client';
+import Image from "next/image";
 import { useState } from "react";
 import { Check, Globe2, Package, Boxes, Truck, Plane, Ship, ShieldCheck, Languages, BadgeCheck, Calculator, Phone, Mail, ChevronRight } from "lucide-react";
 import { Button } from "./ui/button";
@@ -33,7 +34,7 @@ export default function Landing(){
   return (<div className="min-h-screen bg-white text-gray-900">
     <header className="sticky top-0 z-40 backdrop-blur bg-white/70 border-b">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-        <div className="flex items-center gap-2"><Globe2 className="w-6 h-6"/><span className="font-semibold">{t.brand}</span></div>
+        <div className="flex items-center gap-3">  <Image src="/Logo.png" alt="TAJAP logo" width={40} height={40} priority/><span className="font-semibold hidden sm:inline">{t.brand}</span> </div>
         <div className="flex items-center gap-3">
           <div className="hidden md:flex items-center gap-2 text-sm text-gray-600"><ShieldCheck className="w-4 h-4"/><span>{t.badgeJapan}</span></div>
           <div className="flex items-center gap-2"><Languages className="w-5 h-5"/>
