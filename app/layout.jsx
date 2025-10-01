@@ -1,0 +1,1 @@
+export const metadata={title:"TAJAP Co LTD",description:"Export & buyer from Japan"};import "./globals.css";export default function RootLayout({children}){return(<html lang="ru"><body className="min-h-screen bg-white text-gray-900">{children}</body></html>);}
